@@ -154,7 +154,6 @@ function ControlComponent({
         return null;
     }
   };
-  
   return (
     <div>
       <button className="btn-new" onClick={onNewGame}>
