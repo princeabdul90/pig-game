@@ -55,6 +55,7 @@ function ControlComponent({
     TARGET_SCORE,
   ]);
 
+  // Hold
   const onHold = () => {
     if (currentScore > 0) {
       if (index === player0) {
@@ -71,6 +72,7 @@ function ControlComponent({
     nextPlayer();
   };
 
+  // NEW GAME
   const onNewGame = () => {
     setPlayerIndex(0);
     setDice(0);
@@ -82,6 +84,7 @@ function ControlComponent({
     setWinner1(false);
   };
 
+  // ROLL DICE
   const onRollDice = () => {
     let num = Math.floor(Math.random() * 6) + 1;
     let num2 = Math.floor(Math.random() * 6) + 1;
@@ -101,7 +104,7 @@ function ControlComponent({
     setPlayerIndex((i) => (i + 1) % players.length);
   };
 
-  // Dice Image
+  // DICES DISPLAY
   const displayDice = (dice) => {
     switch (dice) {
       case 1:
@@ -151,6 +154,7 @@ function ControlComponent({
         return null;
     }
   };
+  
   return (
     <div>
       <button className="btn-new" onClick={onNewGame}>
