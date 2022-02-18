@@ -13,8 +13,6 @@ A Web App Game with two players playing in rounds to reach a target score.
 
 
 
-### `TODO`
-**Note: Future Game Rule Update**
-
-A player looses his ENTIRE score when he rolls two 6 in a row. After that, it's the next player's turn.
+## Site
+Goto: https://peeggaime.netlify.app/
 
